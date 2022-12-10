@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Francisco</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="{{url_for('index')}}">home</a>
+        <a href="{{url_for('booking2')}}">book</a>
+        <a href="#packages">packages</a>
+
+        <a href="#footer">contact</a>
+        
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<section class="book" id="book">    
+
+    <div class="row">
+
+        <div class="image1">
+            <img src="{{url_for('static', filename='images/sanfrancisco.jpg')}}">
+        </div>
+    </div>
+
+</section>
+
+<section class="book" id="book">    
+
+    <div class="row">
+
+        <div class="image">
+            <h1 style="font-size: 50px;">San Francisco</h1>
+            <br>
+            <p style="font-size:20px; font-family: 'Times New Roman', Times, serif;letter-spacing: 1.5px;">
+                San Francisco officially the City and County of San Francisco, is a cultural, commercial, and financial center in the U.S. state of California. Located in Northern California, San Francisco is the 17th most populous city proper in the United States, and the fourth most populous in California, with 873,965 residents as of 2020.[15] It covers an area of about 46.9 square miles (121 square kilometers),[20] mostly at the north end of the San Francisco Peninsula in the San Francisco Bay Area, making it the second most densely populated large U.S. city, and the fifth most densely populated U.S. county, behind only four of the five New York City boroughs.<br><br>
+San Francisco is the 12th-largest metropolitan statistical area in the United States with 4.7 million residents, and the fourth-largest by economic output, with a GDP of $592 billion in 2019.[21] With San Jose, California, it forms the San Jose–San Francisco–Oakland, CA Combined Statistical Area, the fifth most populous combined statistical area in the United States, with 9.6 million residents as of 2019. Colloquial nicknames for San Francisco include SF, San Fran, The City, and Frisco.</p>
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555069967!2d-122.5076403596098!3d37.757814996818574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1668787337983!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" align="right"></iframe></h3>
+
+        </form>
+
+    </div>
+
+</section>
+<!-- home section ends -->
+
+
+<!-- book section starts  -->
+<br>
+<br>
+
+<section class="packages2" id="packages2">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+<br><br>
+    <div class="box-container2">
+
+        <div class="box2">
+            <a href="{{url_for('booking2')}}"><img src="{{url_for('static', filename='images/sa1.jpeg')}}" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> san Francisco </h3>
+                <p>Golden Gate Bridge</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 7,000 </div>
+          
+            </div>
+        </div>
+        </a>
+        <div class="box2">
+            <a href="{{url_for('booking2')}}"><img src="{{url_for('static', filename='images/sa2.jpeg')}}" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> san Francisco </h3>
+                <p>Alcatraz Island</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 13,000 </div>
+       
+            </div>
+        </div>
+    </a>
+        <div class="box2">
+           <a href="{{url_for('booking2')}}"> <img src="{{url_for('static', filename='images/sa3.jpeg')}}" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> san Francisco </h3>
+                <p>Golden Gate Park</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 6,000 </div>
+    
+            </div>
+        </div>
+    </a>
+        <div class="box2">
+            <a href="{{url_for('booking2')}}"><img src="{{url_for('static', filename='images/sa4.jpeg')}}" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> san Francisco </h3>
+                <p>California Academy of Sciences</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 5,000 </div>
+              
+            </div>
+        </div>
+    </a>
+    </div>
+</section>
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+<section class="packages2" id="packages2">
+
+    <h1 style="font-size: 50px;">Stories, tips, and guides</h1>
+    <br>
+    <br>
+
+    <div class="box-container2">
+
+        <div class="box2">
+            <a href="{{url_for('storiesbooking')}}"><img src="{{url_for('static', filename='images/pg1.jpg')}}" alt="">
+            <div class="content">
+                <h4>&nbsp;&nbsp;&nbsp;Booking</h4>
+                <h2> A Seaside Reset in Laguna Beach Neighborhoods </h2>
+                <h5>From the iconic to the unexpected, the city of San..</h5>
+               
+            </div>
+        </div>
+        </a>
+        <div class="box2">
+            <a href="{{url_for('storiesstay')}}"><img src="{{url_for('static', filename='images/pg2.jpg')}}" alt="">
+            <div class="content">
+                <h1>&nbsp;&nbsp;&nbsp;Stay</h1>
+                <h2>Tiptoe through the Tulips of Washington</h2>
+                <h5>2021 will be a Different Skagit Valley Tulip Fest..</h5>
+                
+            </div>
+        </div>
+        </a><div class="box2">
+            <a href="{{url_for('storiesbooking1')}}"><img src="{{url_for('static', filename='images/pg4.jpg')}}" alt="">
+            <div class="content">
+                <h4>&nbsp;&nbsp;&nbsp;Booking</h4>
+                <h2> The Castle on the Cliff: Majestic, Magic, Manoir </h2>
+                <h5>Thousands of migrants – of whom, many are children..</h5>
+                
+            </div>
+        </div>
+        </a><div class="box2">
+            <a href="{{url_for('storieshotel')}}"><img src="{{url_for('static', filename='images/pg5.jpg')}}" alt="">
+            <div class="content">
+                <h6>&nbsp;&nbsp;&nbsp;Hotel</h6>
+                <h2> All Aboard the Rocky Mountaineer Five-Year-Old </h2>
+                <h5>In this interview, correspondent Polly Nash talks..</h5>
+                
+            </div>
+        </div>
+        </a>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>    
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Established in 2022, Voyage has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers.Our website provide You the best experiance,so that you can have the best vactions of your life</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="https://en.wikipedia.org/wiki/India">india</a>
+            <a href="https://en.wikipedia.org/wiki/USA">USA</a>
+            <a href="https://en.wikipedia.org/wiki/Japan">japan</a>
+            <a href="https://en.wikipedia.org/wiki/France">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="{{url_for('index')}}">home</a>
+            <a href="{{url_for('booking2')}}">book</a>
+            <a href="#packages">packages</a>
+            <a href="#footer">contact</a>
+        </div>
+        <div class="box1">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> Voyage </span> | all rights reserved! </h1>
+
+</section>
+<!-- custom js file link  -->
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+
+</body>
+</html>

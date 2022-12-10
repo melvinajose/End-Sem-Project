@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LetsGoTravels</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/b2style.css')}}">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+</head>
+<body>
+	<!-- header section starts  -->
+	<header>
+
+		<div id="menu-bar" class="fas fa-bars"></div>
+	
+		<a href="#" class="logo"><span>T</span>ravel</a>
+	
+		<nav class="navbar">
+			<a href="{{url_for('index')}}">home</a>
+			
+		</nav>
+	
+		<div class="icons">
+			<i class="fas fa-search" id="search-btn"></i>
+		</div>
+	
+		<form action="" class="search-bar-container">
+			<input type="search" id="search-bar" placeholder="search here...">
+			<label for="search-bar" class="fas fa-search"></label>
+		</form>
+	
+	</header>
+	
+
+
+</div>
+
+	<!--Home section--->
+
+
+<!-- book section starts  -->
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<section class="container" id="container">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="blocks">
+		<!-- partial:index.partial.html -->
+			<div class="left">
+				<div class="triptype">
+					
+					<button type="button" class="one-way-button" ><a href="{{url_for('booking2')}}">One-Way</a></button>
+					</div>
+				<p>From</p>
+				<div class="select">
+					<div class="selectBtn" data-type="firstOption"><i class="fas fa-map-marker-alt"></i>Thunder Bay</div>
+					<div class="selectDropdown">
+						<div class="option" data-type="firstOption"><i class="fas fa-map-marker-alt"></i>Longlac</div>
+						<div class="option" data-type="secondOption"><i class="fas fa-map-marker-alt"></i>Second option</div>
+						<div class="option" data-type="thirdOption"><i class="fas fa-map-marker-alt"></i>Third option</div>
+					</div>
+				</div>
+				<p>To</p>
+				<div class="select">
+					<div class="selectBtn" data-type="firstOption"><i class="fas fa-map-marker-alt"></i>Longlac</div>
+					<div class="selectDropdown">
+						<div class="option" data-type="firstOption"><i class="fas fa-map-marker-alt"></i>First option</div>
+						<div class="option" data-type="secondOption"><i class="fas fa-map-marker-alt"></i>Second option</div>
+						<div class="option" data-type="thirdOption"><i class="fas fa-map-marker-alt"></i>Third option</div>
+					</div>
+				</div>
+				<p>Departure Date</p>
+				<div class="date-input-container">
+					<i class="fas fa-calendar-alt date-icon"></i>
+					<input class="date-input-field " type="date" id="sourcedatepicker">
+				</div>
+				<p>Arrival Date</p>
+				<div class="date-input-container">
+					<i class="fas fa-calendar-alt date-icon"></i>
+					<input class="date-input-field" type="date" id="destinationdatepicker">
+				</div>
+				<p>Passengers</p>
+				<div class="select">
+					<div class="selectBtn" data-type="firstOption"><i class="fas fa-user"></i>1 Adult, 2 Students</div>
+					<div class="selectDropdown">
+						<div class="option" data-type="firstOption"><i class="fas fa-user"></i>First option</div>
+						<div class="option" data-type="secondOption"><i class="fas fa-user"></i>Second option</div>
+						<div class="option" data-type="thirdOption"><i class="fas fa-user"></i>Third option</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+	
+				<div class="image">
+					<img src="{{url_for('static', filename='images/book-img.jpg')}}" alt="">
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="buttons">
+			
+			<button type="button">Book Tickets</button>
+		</div>
+	 </div>
+</section>
+<br>
+<br>
+<br>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Established in 2022, Voyage has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers.Our website provide You the best experiance,so that you can have the best vactions of your life</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="https://en.wikipedia.org/wiki/India">india</a>
+            <a href="https://en.wikipedia.org/wiki/USA">USA</a>
+            <a href="https://en.wikipedia.org/wiki/Japan">japan</a>
+            <a href="https://en.wikipedia.org/wiki/France">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="{{url_for('index')}}">home</a>
+            <a href="{{url_for('booking2')}}">book</a>
+ 
+        </div>
+        <div class="box1">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> Voyage </span> | all rights reserved! </h1>
+
+</section>
+
+    <script src="{{url_for('static', filename='scripts/bscript.js')}}"></script>
+</body>
+</html>

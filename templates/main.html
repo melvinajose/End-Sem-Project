@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+<style>
+    .services .box-container .box{
+        box-shadow: 0 1rem 2rem rgba(.5,.5,.5,.2);
+
+    }
+    .services .box-container .box:hover{
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+        transform: scale(1.03);
+        object-fit: hidden;
+    }
+</style>
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="{{url_for('booking2')}}">book</a>
+        <a href="#services">Explore</a>
+        <a href="#packages">packages</a>
+        <a href="#services1">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <a href="{{url_for('login')}}"><i class="fas fa-user" id="login-btn"></i></a>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+   
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>dicover new places with us, adventure awaits</p>
+        <a href="#services" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="{{url_for('static', filename='images/v3.mp4')}}"></span>
+        <span class="vid-btn" data-src="{{url_for('static', filename='images/yv1.mp4')}}"></span>
+        <span class="vid-btn" data-src="{{url_for('static', filename='images/hv.mp4')}}"></span>
+        <span class="vid-btn" data-src="{{url_for('static', filename='images/pv.mp4')}}"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="{{url_for('static', filename='images/v3.mp4')}}" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<section class="services" id="services">
+    <h1 class="heading">
+        <span>E</span>
+        <span>x</span>
+        <span>p</span>
+        <span>l</span>
+        <span>o</span>
+        <span>r</span>
+        <span>e</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>m</span>
+        <span>o</span>
+        <span>r</span>
+        <span>e</span>
+    </h1>
+    <div class="box-container">
+
+        
+        <a href="{{url_for('yatch')}}"><div class="box">
+            <br>
+            <i class="fas fa-ship"></i>
+            <br>
+            <br>    
+            <h3> YATCH </h3>
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Believe me there is nothing absolutely&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> worth doing as simply messing<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in the Luxuriousness of the sea&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+        </div></a>
+
+        <a href="{{url_for('tourplace')}}">
+        
+            <div class="box">
+                <br>
+            <i class="fas fa-globe-asia"></i>
+            <br>
+            <br>
+            <h3> HOLIDAYS </h3>
+            <br>
+            <p>Vacations mean a change of pace<br> a gentleness with ourselves time of rest and renewal<br>and a time to stretch ourselves and encounter new people</p>
+        </div></a>
+        
+        <a href="{{url_for('hiking')}}">
+            <div class="box">
+                <br>
+                <i class="fas fa-hiking"></i>
+                <br>
+                <br>
+                <h3> HIKING </h3>
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Browse through a wide range of Hiking Packages &nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;around the world with exciting offers at Voyage. &nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;Book Trekking places around the world ​with us</p>
+            </div> 
+        </a>
+        
+    
+</section>
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#"><img src="{{url_for('static', filename='images/pb1.jpg')}}" alt="">
+            <div class="content">
+                <p> <i class="fas fa-map-marker-alt"></i> Hyderabad </p>
+                <h3>Hyderabad  Grandeur</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 10,000 <span>INR 15,000</span> </div>
+                <p>Duration : &nbsp 3days</p>
+            </div>
+        </div>
+        </a>
+        <div class="box">
+            <a href="#"><img src="{{url_for('static', filename='images/hp14.jpg')}}" alt="">
+            <div class="content">
+                <p> <i class="fas fa-map-marker-alt"></i> Sikkim </p>
+                <h3>Dzongri And Goecha-La</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 8,000 <span>INR 12,000</span> </div>
+                <p>2days</p>
+            </div>
+        </div>
+    </a>
+    <div class="box">
+        <a href="#"> <img src="{{url_for('static', filename='images/pb3.jpg')}}" alt="">
+         <div class="content">
+             <p> <i class="fas fa-map-marker-alt"></i> Kerala</p>
+             <h3>Unparalelled Kerala</h3>
+             <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="far fa-star"></i>
+             </div>
+             <div class="price"> INR 19,000 <span> INR 25,000 </span> </div>
+             <p>Duration : &nbsp 6days</p>
+         </div>
+     </div>
+ </a>
+
+ <div class="box">
+    <a href="#"><img src="{{url_for('static', filename='images/pb4.jpg')}}" alt="">
+    <div class="content">
+        <p> <i class="fas fa-map-marker-alt"></i> Andaman Nicobar Islands </p>
+        <h3>Fascinating Havelock Island</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <div class="price"> INR 21,000 <span> INR 28,000 </span> </div>
+        <p>Duration : &nbsp 5days</p>
+    </div>
+</div>
+</a>
+<div class="box">
+    <a href="#"><img src="{{url_for('static', filename='images/yp7.jpg')}}" alt="">
+    <div class="content">
+        <p> <i class="fas fa-map-marker-alt"></i> San Fransisco </p>
+        <h3>Wave Runner</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <div class="price"> INR 500,000 <span>INR 710,000</span> </div>
+        <p>20 people &nbsp&nbsp 3-4hours</p>
+    </div>
+</div>
+</a>
+<div class="box">
+    <a href="#"><img src="{{url_for('static', filename='images/hp13.jpg')}}" alt="">
+    <div class="content">
+        <p> <i class="fas fa-map-marker-alt"></i> Himachal Pradesh </p>
+        <h3>Hampta Pass</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <div class="price"> INR 15,000 <span>INR 18,000</span> </div>
+        <p>4days</p>
+    </div>
+</div>
+</a>
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services1">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>hotels</h3>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safty guide</h3>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>travel</h3>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{{url_for('static', filename='images/g-1.jpg')}}" alt="">
+          
+        </div>
+        <div class="box">
+            <img src="{{url_for('static', filename='images/g-2.jpg')}}" alt="">
+         
+        </div>
+        <div class="box">
+            <img src="{{url_for('static', filename='images/g-3.jpg')}}" alt="">
+     
+        </div>
+        <div class="box">
+            <img src="{{url_for('static', filename='images/g-4.jpg')}}" alt="">
+         
+        </div>
+        <div class="box">
+            <img src="{{url_for('static', filename='images/g-5.jpg')}}" alt="">
+         
+        </div>
+        <div class="box">
+            <img src="{{url_for('static', filename='images/g-6.jpg')}}" alt="">
+           
+        </div>
+        <div class="box">
+            <img src="{{url_for('static', filename='images/g-7.jpg')}}" alt="">
+       
+       
+        </div>
+        <div class="box">
+            <img src="{{url_for('static', filename='images/g-8.jpg')}}" alt="">
+            
+        
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>u</span>
+        <span>s</span>
+
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="{{url_for('static', filename='images/contact-img.svg')}}" alt="">
+        </div>
+
+        <form action="" method="post">
+            <div class="inputBox">
+                <input type="text" placeholder="name" name="name">
+                <input type="email" placeholder="email" name="email">
+            </div>
+            
+            <textarea placeholder="message" name="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Established in 2022, Voyage has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers.Our website provide You the best experiance,so that you can have the best vactions of your life</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="https://en.wikipedia.org/wiki/India">india</a>
+            <a href="https://en.wikipedia.org/wiki/USA">USA</a>
+            <a href="https://en.wikipedia.org/wiki/Japan">japan</a>
+            <a href="https://en.wikipedia.org/wiki/France">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="{{url_for('booking2')}}">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services1">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#contact">contact</a>
+        </div>
+        <div class="box1">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> Voyage </span> | all rights reserved! </h1>
+
+</section>
+
+<!-- custom js file link  -->
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+
+</body>
+</html>

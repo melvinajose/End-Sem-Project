@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories Stay</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+<style>
+    h4{
+        font-size:1.5rem;
+  color:rgb(9, 158, 29);
+  flex:.5 .5 10rem;
+  width: 58px;
+  border-radius: .5rem;
+  overflow: hidden;
+  background: rgb(214, 230, 215);
+    }
+</style>
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+       
+        <a href="#footer">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<section class="book" id="book">    
+
+    <div class="row">
+
+        <div class="image1">
+            <img src="{{url_for('static', filename='images/pg2.jpg')}}">
+            <br><br><br><br>    
+            <h4>&nbsp;&nbsp;&nbsp;Stay</h4>
+            <br><br>
+            <h1 style="font-size: 30px;">Tiptoe through the Tulips of Washington</h1>
+            <br><br>
+            <p style="font-size:20px; font-family: 'Times New Roman', Times, serif;letter-spacing: 1.5px;color: rgb(98, 98, 98);">
+                2021 will be a Different Skagit Valley Tulip Festival. We know there will be restrictions on the number of people who can visit our fields and gardens (and other retail establishments/restaurants/venues) based on COVID guidelines established by the state and county governments. We will be following those guidelines, but still be working to welcome you and help you with your visit. 
+                <br><br>
+                The drive is easy freeway driving for approx. 90 minutes each way (from Seattle Southside). For lightest traffic plan on arriving at the fields early in the day on the weekends or travel during non-rush hours mid-week.
+Stop at the Tulip Festival Administration office 311 W. Kincaid St. Mount Vernon, WA 98273 for free maps, advice on where to start/stop your excursion and special event info.<br>
+With maps and “Tulip Route” signage the fields are easy to find.<br>
+Wear practical shoes. There aren’t sidewalks in the fields; be prepared for dusty to muddy conditions. My daughter wore her pink polka dot rain boots for fashion and the practicality purposes.<br>
+Walking paths are made out of firmly packed gravel or dirt. Check weather forecasts to get an idea on stroller friendly conditions.
+<br><br>There are multiple tulip farms to see and each is immense. For families with young children I recommend pacing yourself and expect to visit one farm maybe two. We spent two hours at one field, had dinner then drove back. It was a long five hour outing for a four year old but days later she’s still talking about the “bee-you-tee-ful flowers” and I’m still admiring a collection of charming photos.
+The RoozenGaarde field has food vendors. (fair food cuisine and prices) There’s a grassy area with a few tables and room to have a picnic.
+Bring cash. Some vendors accept cash and plastic – others take cash only.<br>
+There are plenty of facilities (porta-potties) at the farms. For families with babies or young toddlers, bring a blanket in the diaper bag because I didn’t see any changing areas.<br>
+No pets allowed in the tulip fields. Leave Fluffy or Fido at home.<br>
+*Bonus tip – make sure your camera has plenty of battery life you’ll have a “bazillion” photo opportunities.
+            
+            </p>
+                
+            </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3></h3>
+        </form>
+
+    </div>
+
+</section>
+<br>
+<br>
+<br>
+<!-- footer section  -->
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Established in 2022, Voyage has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers.Our website provide You the best experiance,so that you can have the best vactions of your life</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="https://en.wikipedia.org/wiki/India">india</a>
+            <a href="https://en.wikipedia.org/wiki/USA">USA</a>
+            <a href="https://en.wikipedia.org/wiki/Japan">japan</a>
+            <a href="https://en.wikipedia.org/wiki/France">france</a>
+        </div>
+       
+        <div class="box1">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> Voyage </span> | all rights reserved! </h1>
+
+</section>
+<!-- custom js file link  -->
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+
+</body>
+</html>

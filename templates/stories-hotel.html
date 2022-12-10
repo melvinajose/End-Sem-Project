@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories Hotel</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+<style>
+    h4{
+        font-size:1.5rem;
+  color:rgb(19, 9, 158);
+  flex:.5 .5 10rem;
+  width: 65px;
+  border-radius: .5rem;
+  overflow: hidden;
+  background: rgb(216, 214, 230);
+    }
+</style>
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="{{url_for('index')}}">home</a>
+        <a href="{{url_for('booking2')}}">book</a>
+      
+        <a href="#footer">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<section class="book" id="book">    
+
+    <div class="row">
+
+        <div class="image1">
+            <img src="{{url_for('static', filename='images/pg5.jpg')}}">
+            <br><br><br><br>    
+            <h4>&nbsp;&nbsp;&nbsp;Hotel</h4>
+            <br><br>
+            <h1 style="font-size: 30px;">All Aboard the Rocky Mountaineer Five-Year-Old</h1>
+            <br><br>
+            <p style="font-size:20px; font-family: 'Times New Roman', Times, serif;letter-spacing: 1.5px;color: rgb(98, 98, 98);">
+                Hotels are classified by the classification committee, which comprises Government and trade representatives. Based on different facilities and services provided by a hotel; they are given star ratings from one to five. Hotels are categorized depending upon location, number of rooms, types of rooms and other available facilities. One of the important facilities in hotels includes good reception and information counter. Today, modern western hotels are found in all big cities and at important tourist locations.
+                <br><br>
+                Some of the important types of hotels that fulfill the wishes of their customers are commercial or down town hotels, resort hotels, residential hotels, airport hotels and floating hotels. Restaurants and bars are important part of the hotel business. They offer local as well as international cuisines.
+                <br><br>
+                Commercial or down town hotels are situated in the heart of the city. They are visited by business executives. Due to their location, their rates are generally high. Such hotels furnish the needs of an individual traveller. Services in such hotels include all types of business amenities.
+                <br><br>
+                Resort hotels cater to the needs of holiday makers and tourists. They are located in the areas or natural beauty like lakes or beaches. Such resort hotels are built for providing rest, relaxation and entertainment to their guests. They have an atmosphere of informality as compared to down town hotels. Recreational facilities like swimming pools, tennis courts, golf courses, surfing, etc. are also provided in resort hotels. Summer, winter, all seasons, hill and health are some of the important types of resorts. 
+                <br><br>
+                Airport hotels are usually situated near domestic or international airports. Such hotels generally cater to tourist travelling by airways. Another type of hotel is residential hotel. Charges in such hotels are based on monthly, half yearly and yearly. These hotels are situated in important cities. The customers can live in such hotel as long as they wish.
+                <br><br>
+                Floating structures specially constructed on rivers and lakes are called `Hotels’. Often old luxury ships are converted into such floating hotels. Different facilities and services of a hotel are provided in it. Today such hotels are very popular among the tourist. Even the tourists are looking for a different kind of experience.
+             </p>
+                
+            </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3></h3>
+        </form>
+
+    </div>
+
+</section>
+<br>
+<br>
+<br>
+<!-- footer section  -->
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Established in 2022, Voyage has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers.Our website provide You the best experiance,so that you can have the best vactions of your life</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="https://en.wikipedia.org/wiki/India">india</a>
+            <a href="https://en.wikipedia.org/wiki/USA">USA</a>
+            <a href="https://en.wikipedia.org/wiki/Japan">japan</a>
+            <a href="https://en.wikipedia.org/wiki/France">france</a>
+        </div>
+       
+        <div class="box1">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> Voyage </span> | all rights reserved! </h1>
+
+</section>
+
+<!-- custom js file link  -->
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+
+</body>
+</html>

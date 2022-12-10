@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories Booking1</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+<style>
+    h4{
+        font-size:1.5rem;
+  color:rgb(200, 5, 5);
+  flex:.5 .5 10rem;
+  width: 85px;
+  border-radius: .5rem;
+  overflow: hidden;
+  background: rgb(230, 214, 214);
+    }
+</style>
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="{{url_for('index')}}">home</a>
+        <a href="{{url_for('booking2')}}">book</a>
+        <a href="#footer">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<section class="book" id="book">    
+
+    <div class="row">
+
+        <div class="image1">
+            <img src="{{url_for('static', filename='images/pg4.jpg')}}">
+            <br><br><br><br>    
+            <h4>&nbsp;&nbsp;&nbsp;Booking</h4>
+            <br><br>
+            <h1 style="font-size: 30px;">The Castle on the Cliff: Majestic, Magic, Manoir</h1>
+            <br><br>
+            <p style="font-size:20px; font-family: 'Times New Roman', Times, serif;letter-spacing: 1.5px;color: rgb(98, 98, 98);">
+                Thousands of migrants – of whom, many are children – suffer from deadly heat conditions at the US-Mexico border. As the effects of climate change worsen day by day, extreme weather conditions are causing a high risk of dehydration and death amongst migrants who try to enter the States through the Sonoran Desert.
+                <br><br>
+                In order to calculate the deadliest areas in the U.S. – Mexico Border, scientists and researchers used a biophysical model of human dehydration. According to the report made by this model, it was found that most of the deaths were caused primarily by severe dehydration. After organizing the dataset in the regions with the casualties, severe dehydration that leads to death, water loss, organ failure, disorientation and physiological challenges in animal species were linked together for the report.
+                <br><br>
+                “We provide the first empirical evidence that the physiological stresses experienced by humans attempting to cross the Sonoran Desert into the U.S. are sufficient to cause severe dehydration and associated conditions that can lead to death. A disproportionately large percentage of migrant deaths occur in areas where the predicted rates of water loss are highest,” says Ryan Long, an associate professor of wildlife sciences at the University of Idaho. Long also underlines the importance of access to drinking water supplies for preventing the risks at the highest rates of water loss during migration across the borders in the region.
+                <br><br>
+                Models developed for fighting against climate change and water scarcity unfortunately show us that these type of border crossings will only become more dangerous over time, increasing the already large number of people who do not make it across. Measures must be taken immediately to mitigate this crisis.  
+            </p>
+                
+            </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3></h3>
+        </form>
+
+    </div>
+
+</section>
+<br>
+<br>
+<br>
+<!-- footer section  -->
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Established in 2022, Voyage has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers.Our website provide You the best experiance,so that you can have the best vactions of your life</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="https://en.wikipedia.org/wiki/India">india</a>
+            <a href="https://en.wikipedia.org/wiki/USA">USA</a>
+            <a href="https://en.wikipedia.org/wiki/Japan">japan</a>
+            <a href="https://en.wikipedia.org/wiki/France">france</a>
+        </div>
+       
+        <div class="box1">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> Voyage </span> | all rights reserved! </h1>
+
+</section>
+
+<!-- custom js file link  -->
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+
+</body>
+</html>

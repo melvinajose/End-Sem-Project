@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style1.css')}}">
+  <!-- Font Awesome CDN Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body background="{{url_for('static', filename='images/pv.mp4')}}">
+    <div class="container">
+        
+        <!--signup-->
+        <form  class="form" action='' method="post">
+		      <div class="text">
+            <h1>SignUp</h1>
+            <br>
+          </div>
+            <div class="animated-input">
+                <input type="text" placeholder="Username" name="name" required>
+                <input type="emailid" placeholder="Email ID" name="email" required>
+                <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" name="phno" required>
+                <input type="password" placeholder="Password"name="psswd" required>
+                <input type="password" placeholder="ConfirmPassword" name="pswdconfirm" required>
+
+            </div>
+            <br>  
+
+            <div class="checkBox">
+                <input type="checkbox" name="checkbox" id="checkbox" required>
+                <span class="text">I agree with term & conditions</span>
+              </div>
+              <div class="formGroup">
+                <button class="btn2" type="submit">REGISTER</button>
+                <br><div class="msg">{{ msg }}</div><br>
+                <p class="account">Already have an account? <a href="{{url_for('login')}}"> Login</a></p>
+              </div>
+              
+            <br>
+        </form> 
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+mail_server: 'smtp.gmail.com'
+mail_port: 465
+mail_username: 'v.o.y.a.g.e.tms@gmail.com'
+mail_password: 'Voyage@123'
+mail_use_tls: 'False'
+mail_use_ssl: 'True'

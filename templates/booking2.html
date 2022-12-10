@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="CodeHim">
+      <title> Booking </title>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="{{url_for('static', filename='styles/bkngstyle.css')}}">
+      
+   </head>
+   <body background ="{{url_for('static', filename='images/btrip2.jpg')}}" style = "background-repeat:no-repeat;background-size:100% 100% ">
+	<header>
+
+		<div id="menu-bar" class="fas fa-bars"></div>
+	
+		<a href="#" class="logo"><span>T</span>ravel</a>
+	
+		<nav class="navbar">
+			<a href="{{url_for('index')}}">home</a>
+			
+			<a href="{{url_for('index')}}">packages</a>
+			
+			<a href="{{url_for('index')}}">gallery</a>
+			
+			<a href="{{url_for('index')}}">contact</a>
+		</nav>
+	
+		<div class="icons">
+			<i class="fas fa-search" id="search-btn"></i>
+			<i class="fas fa-user" id="login-btn"></i>
+		</div>
+	
+		<form action="" class="search-bar-container">
+			<input type="search" id="search-bar" placeholder="search here...">
+			<label for="search-bar" class="fas fa-search"></label>
+		</form>
+	
+	</header>
+	<BR>
+		<BR>
+			<BR>
+				<BR>
+					<BR>
+      <!--$%adsense%$-->
+	  <section class="container" id="container">
+		<BR>
+			<BR><BR><BR>
+
+		<h1 class="heading">
+			<span>b</span>
+			<span>o</span>
+			<span>o</span>
+			<span>k</span>
+			<span class="space"></span>
+			<span>n</span>
+			<span>o</span>
+			<span>w</span>
+		</h1>
+		</section>
+      <main class="cd__main">
+         <div class="main">
+	<main class="app">
+		<div class="screen-wrap">
+			<section class="screen-home">
+				<div class="screen-home__form-wrap">
+					<div class="screen-home__form">
+						<form  action='' method="post">
+							<div id="formdetail">
+								<div class="screen-home__location">
+									<div class="lable">
+										<figure class="icon"><img src="https://i.ibb.co/KwnYdXN/location.png"></figure>
+										<span class="text">Location Details</span>
+									</div>
+									<div class="input-wrap">
+										<div class="inside-wrap">
+											<div class="rotate-btn">
+												<figure>
+													<img src="https://i.ibb.co/HPBrQkn/rotate-btn.png">
+												</figure>
+											</div>
+											<div class="from">
+												<span class="inside-lable">From</span>
+												<input class="input" type="text" name = 'from_city' placeholder="Eg : California" required>
+											</div>
+											<div class="to">
+												<span class="inside-lable">To</span>
+												<input class="input" type="text" name="to_city" placeholder="Eg : New York" required>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="screen-home__date">
+									<div class="lable">
+										<figure class="icon"><img src="https://i.ibb.co/7N5zdnc/calendar.png"></figure>
+										<span class="text">Date Details</span>
+									</div>
+									<div class="input-wrap">
+										<div class="inside-wrap">
+											<div class="date-input-container">
+												<i class="fas fa-calendar-alt date-icon"></i>
+												<input class="date-input-field " type="date" id="sourcedatepicker" name = 'd_date' required>
+												<br>
+											</div>
+											<br>
+											<div class="date-input-container">
+												<i class="fas fa-calendar-alt date-icon"></i>
+												<input class="date-input-field " type="date" id="sourcedatepicker" name = 'a_date'required>
+											</div>
+											</div>
+											
+										</div>
+										<div class="inside-lable-wrap">
+											<div class="inside-lable-col">
+												<span class="inside-lable">Departure</span>
+											</div>
+											<div class="inside-lable-col">
+												<span class="inside-lable">Arrivals</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="screen-home__submit-wrap">
+								<span class="line"></span>
+								<div class="screen-home__bus-page" id="buspage">
+									<div class="screen-home__inside-wave">
+										
+									</div>
+									<figure class="screen-home__bus-arrow-wrap">
+                         <button><img src="https://i.ibb.co/nQ4khG8/arrow.png"><input type="submit" value="Book Now"></button>
+									</figure>
+								</div>
+							</div>
+						
+					</div>
+					<div class="screen-home__recent-search">
+						<div class="lable">
+							<figure class="icon"><img src="https://i.ibb.co/dM8cwj6/recent-search.png"></figure><br><br><br><br>
+							<span class="text">Passengers</span>
+						</div>
+						<div class="selected">
+                
+                
+							<h4>number of adults<input type="number" id="points" name="adult_no" value="1" step="1" required></h4>
+							<br>
+							
+							<h4>childern<input type="number" id="points" name="child_no" value="0" step="1" required></h4>
+							<br>
+							<br>
+						</div>
+						<div class="screen-home__rs-wrap">
+							<ul class="screen-home__rs-row">
+								
+								
+							</ul>
+						</div>
+					</div>
+					</form>
+				</div>
+			</section>
+		
+		</section>
+	</main>
+</div>
+      </main>
+      
+      <!-- Script JS -->
+      <script src="{{url_for('static', filename='scripts/bkngscript.js')}}"></script>
+   </body>
+</html>

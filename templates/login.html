@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style1.css')}}">
+</head>
+<body>
+    <div class="container1">
+
+        <form  class="form" action='{{url_for('login')}}' method="post">
+		<div class="text">
+            <h1>Login</h1>
+  <br>
+        </div>
+            <div class="animated-input">
+                <input type="text" placeholder="Username" name="name" required>
+                <input type="password" placeholder="Password" name="psswd" required>
+            </div>
+            <br>
+            <div class="check">
+                <div>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="disc"></label>
+                    
+                    <label for="check" class="remember">Remember</label>
+                </div>
+                <br>
+                <p class="forget"><a href="{{url_for('forgotpass')}}">Forgot Password?</a></p>
+            </div>
+            <br>
+			<button class="btn2" type="submit">LOGIN</button>
+            <br>
+            <br> 
+            <div id="msg">{{ msg }}</div>
+            <br>
+            <br>
+        <p class="account">Don't have an account? <a href="{{url_for('signup')}}"> Create Now</a></p>
+        </form>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="{{url_for('index')}}">home</a>
+        <a href="{{url_for('booking2')}}">book</a>
+        <a href="#packages">packages</a>
+        <a href="#footer">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<!-- home section starts  -->
+
+<section class="book" id="book">    
+
+    <div class="row">
+
+        <div class="image1">
+            <img src="{{url_for('static', filename='images/california.jpg')}}">
+        </div>
+    </div>
+
+</section>
+<section class="book" id="book">    
+
+    <div class="row">
+
+        <div class="image">
+            <h1 style="font-size: 50px;">California</h1>
+            <br>
+            <p style="font-size:22px; font-family: 'Times New Roman', Times, serif;letter-spacing: 1.5px;">
+                California, constituent state of the United States of America. It was admitted as the 31st state of the union on September 9, 1850, and by the early 1960s it was the most populous U.S. state. No version of the origin of California’s name has been fully accepted, but there is wide support for the contention that it derived from an early 16th-century Spanish novel, Las sergas de Esplandián (“The Adventures of Esplandián”), that described a paradisiacal island full of gold and precious stones called California. The influence of the Spanish settlers of the 18th and 19th centuries is evident in California’s architecture and place-names. The capital is Sacramento.</p>
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509165.385501108!2d-123.79900806072138!3d37.19302223115138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1668786226854!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" align="right"></iframe></h3>
+
+        </form>
+
+    </div>
+
+</section>
+<!-- home section ends -->
+
+<br>
+<br>
+
+<section class="packages2" id="packages2">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+<br><br>
+    <div class="box-container2">
+
+        <div class="box2">
+            <a href="{{url_for('booking2')}}"><img src="{{url_for('static', filename='images/ca1.jpeg')}}" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> California </h3>
+                <p>Universal Studios Hollywood</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 12,000 </div>
+               
+            </div>
+        </div>
+        </a>
+        <div class="box2">
+            <a href="{{url_for('booking2')}}"><img src="{{url_for('static', filename='images/ca2.jpeg')}}" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> California </h3>
+                <p>Golden Gate Bridge</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 12,000 </div>
+                
+            </div>
+        </div>
+    </a>
+        <div class="box2">
+           <a href="{{url_for('booking2')}}"> <img src="{{url_for('static', filename='images/ca3.jpeg')}}" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> California</h3>
+                <p>Death Valley National Park </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 7,000 </div>
+                
+            </div>
+        </div>
+    </a>
+        <div class="box2">
+            <a href="{{url_for('booking2')}}"><img src="{{url_for('static', filename='images/ca4.jpeg')}}" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> California </h3>
+                <p>Disneyland Park</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 15,000 </div>
+                
+            </div>
+        </div>
+    </a>
+    </div>
+</section>
+<!-- packages section ends -->
+
+<section class="packages2" id="packages2">
+
+    <h1 style="font-size: 50px;">Stories, tips, and guides</h1>
+    <br>
+    <br>
+
+    <div class="box-container2">
+
+        <div class="box2">
+            <a href="{{url_for('storiesbooking')}}"><img src="{{url_for('static', filename='images/pg1.jpg')}}" alt="">
+            <div class="content">
+                <h4>&nbsp;&nbsp;&nbsp;Booking</h4>
+                <h2> A Seaside Reset in Laguna Beach Neighborhoods </h2>
+                <h5>From the iconic to the unexpected, the city of San..</h5>
+               
+            </div>
+        </div>
+        </a>
+        <div class="box2">
+            <a href="{{url_for('storiesstay')}}"><img src="{{url_for('static', filename='images/pg2.jpg')}}" alt="">
+            <div class="content">
+                <h1>&nbsp;&nbsp;&nbsp;Stay</h1>
+                <h2>Tiptoe through the Tulips of Washington</h2>
+                <h5>2021 will be a Different Skagit Valley Tulip Fest..</h5>
+                
+            </div>
+        </div>
+        </a><div class="box2">
+            <a href="{{url_for('storiesbooking1')}}"><img src="{{url_for('static', filename='images/pg4.jpg')}}" alt="">
+            <div class="content">
+                <h4>&nbsp;&nbsp;&nbsp;Booking</h4>
+                <h2> The Castle on the Cliff: Majestic, Magic, Manoir </h2>
+                <h5>Thousands of migrants – of whom, many are children..</h5>
+                
+            </div>
+        </div>
+        </a><div class="box2">
+            <a href="{{url_for('storieshotel')}}"><img src="{{url_for('static', filename='images/pg5.jpg')}}" alt="">
+            <div class="content">
+                <h6>&nbsp;&nbsp;&nbsp;Hotel</h6>
+                <h2> All Aboard the Rocky Mountaineer Five-Year-Old </h2>
+                <h5>In this interview, correspondent Polly Nash talks..</h5>
+                
+            </div>
+        </div>
+        </a>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>    
+
+<!-- footer section  -->
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Established in 2022, Voyage has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers.Our website provide You the best experiance,so that you can have the best vactions of your life</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="https://en.wikipedia.org/wiki/India">india</a>
+            <a href="https://en.wikipedia.org/wiki/USA">USA</a>
+            <a href="https://en.wikipedia.org/wiki/Japan">japan</a>
+            <a href="https://en.wikipedia.org/wiki/France">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="{{url_for('index')}}">home</a>
+            <a href="{{url_for('booking2')}}">book</a>
+            <a href="#packages">packages</a>
+            <a href="#footer">contact</a>
+        </div>
+        <div class="box1">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> Voyage </span> | all rights reserved! </h1>
+
+</section>
+<!-- custom js file link  -->
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+
+</body>
+</html>

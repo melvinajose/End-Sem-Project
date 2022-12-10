@@ -1,0 +1,4 @@
+mysql_host: 'localhost'
+mysql_user: 'project'
+mysql_password: 'project'
+mysql_db: 'project'

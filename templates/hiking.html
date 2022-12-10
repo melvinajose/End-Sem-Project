@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIKING</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="{{url_for('index')}}">home</a>
+        <a href="{{url_for('booking2')}}">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery1">gallery</a>
+        <a href="#footer">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+    <!--home-->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Hiking Tour</h3>
+            <p>Experience</p>
+            <a href="#packages" class="btn">see all tours</a>
+        </div>
+        <div class="video-container">
+            <video src="{{url_for('static', filename='images/hv.mp4')}}" id="video-slider" loop autoplay muted></video>
+        </div>
+    
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--home-->
+    <section class="book" id="book">    
+
+        <div class="row">
+    
+            <div class="image1">
+    <h1>
+        Since 2022, we’ve helped more than 500 people of all ages enjoy the best outdoor experience of their lives. Whether it’s for one day or a two-week vacation, close to home or a foreign land.</h1>
+<!-- book section starts  -->
+</div>
+        </div>
+    </section>
+<br>
+    <br>
+
+    
+
+<!-- packages section starts  -->
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>c</span>
+        <span>h</span>
+        <span>o</span>
+        <span>o</span>
+        <span>s</span>
+        <span>e</span>
+        &nbsp;&nbsp;&nbsp;
+        <span>y</span>
+        <span>o</span>
+        <span>u</span>
+        <span>r</span>
+        &nbsp;&nbsp;&nbsp;
+        <span>h</span>
+        <span>i</span>
+        <span>k</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>
+        &nbsp;&nbsp;&nbsp;
+        <span>s</span>
+        <span>t</span>
+        <span>y</span>
+        <span>l</span>
+        <span>e</span>
+
+            </h1>
+        
+            <div class="box-container">
+        
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hp1.png')}}" alt="">
+                    <div class="content">
+                        <h3>hosted tour</h3>
+                        <a href="#packages" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hp2.png')}}" alt="">
+                    <div class="content">
+                        <h3>chellenging trecks</h3>
+                        <a href="#packages" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hp3.png')}}" alt="">
+                    <div class="content">
+                        <h3>Bucket list trecks</h3>
+                        <a href="#packages" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hp6.png')}}" alt="">
+                    <div class="content">
+                        <h3>family trecks</h3>
+                        <a href="#packages" class="btn">see more</a>
+                    </div>
+                </div>
+                
+        
+</section>
+        <br>
+        <br>
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="{{url_for('booking2')}}"><img src="{{url_for('static', filename='images/hp13.jpg')}}" alt="">
+            <div class="content">
+                <p> <i class="fas fa-map-marker-alt"></i> Himachal Pradesh </p>
+                <h3>Hampta Pass</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 15,000 <span>INR 18,000</span> </div>
+                <p>4days</p>
+            </div>
+        </div>
+        </a>
+        <div class="box">
+            <a href="{{url_for('booking2')}}"><img src="{{url_for('static', filename='images/hp14.jpg')}}" alt="">
+            <div class="content">
+                <p> <i class="fas fa-map-marker-alt"></i> Sikkim </p>
+                <h3>Dzongri And Goecha-La</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 8,000 <span>INR 12,000</span> </div>
+                <p>2days</p>
+            </div>
+        </div>
+    </a>
+        <div class="box">
+           <a href="{{url_for('booking2')}}"> <img src="{{url_for('static', filename='images/hp10.jpg')}}" alt="">
+            <div class="content">
+                <p> <i class="fas fa-map-marker-alt"></i> Himachal Pradesh</p>
+                <h3>Pin Parvati Pass</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 45,000 <span>INR 65,000</span> </div>
+                <p>11days</p>
+            </div>
+        </div>
+    </a>
+        <div class="box">
+            <a href="{{url_for('booking2')}}"><img src="{{url_for('static', filename='images/hp11.jpg')}}" alt="">
+            <div class="content">
+                <p> <i class="fas fa-map-marker-alt"></i> Jammu & Kashmir </p>
+                <h3>Great Lakes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 40,000 <span>INR 50,000</span> </div>
+                <p>7days</p>
+            </div>
+        </div>
+    </a>
+        <div class="box">
+            <a href="{{url_for('booking2')}}"><img src="{{url_for('static', filename='images/hp15.jpg')}}" alt="">
+            <div class="content">
+                <p> <i class="fas fa-map-marker-alt"></i>Himachal Pradesh </p>
+                <h3>Old Manali</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 22,000 <span>INR 28,000</span> </div>
+                <p>4days</p>
+            </div>
+        </div>
+    </a>
+        <div class="box">
+            <a href="{{url_for('booking2')}}"><img src="{{url_for('static', filename='images/hp16.jpg')}}" alt="">
+            <div class="content">
+                <p> <i class="fas fa-map-marker-alt"></i> Rishikesh </p>
+                <h3>Himalayan Base</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> INR 75,000 <span>INR 90,000</span> </div>
+                <p>12days</p>
+            </div>
+        </div>
+    </a>
+    </div>
+
+</section>
+<br>
+    <br>
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>H</span>
+        <span>O</span>
+        <span>W</span>
+        &nbsp;
+        &nbsp;
+        <span>I</span>
+        <span>T</span>
+        &nbsp;
+        &nbsp;
+        <span>W</span>
+        <span>O</span>
+        <span>R</span>
+        <span>K</span>
+    </h1>
+<div class="box-container">
+
+    <div class="box">
+        <i class="fas fa-mountain"></i>
+        <h3>Explore</h3>
+        <p>It is in our nature to explore, to reach out into the unknown. The only true failure would be not to explore at all</p>
+    </div>
+    <div class="box">
+        <i class="fas fa-book"></i>
+        <h3>Book It</h3>
+        <p>Its never to late,you have to believe in your dreams to make them a reality,so wake up</p>
+    </div>
+    <div class="box">
+        <i class="fas fa-hiking"></i>
+        <h3>Enjoy</h3>
+        <p>Cherish your solitude. Take trains by yourself to places you have never been. Sleep out alone under the stars.Go so far away that you stop being afraid of not coming back</p>
+    </div>
+</section>
+<br>
+    <br>
+
+        <section class="gallery" id="gallery1">
+
+            <h1 class="heading">
+                <span>f</span>
+                <span>r</span>
+                <span>o</span>
+                <span>m</span>
+                &nbsp;&nbsp;&nbsp;
+                <span>t</span>
+                <span>h</span>
+                <span>e</span>
+                &nbsp;&nbsp;&nbsp;
+                <span>b</span>
+                <span>l</span>
+                <span>o</span>
+                <span>g</span>
+        
+            </h1>
+            <div class="box-container">
+        
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hpb1.jpg')}}" alt="">
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hpb2.jpg')}}" alt="">
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hpb3.jpg')}}" alt="">
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hpb4.jpg')}}" alt="">
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hp9.jpg')}}" alt="">
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hp10.jpg')}}" alt="">
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hp7.jpg')}}" alt="">
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static', filename='images/hp8.jpg')}}" alt="">
+                </div>
+        </section>
+            <!-- footer section  -->
+            <br>
+            <br>
+            <br>
+            <br>
+            <section class="footer" id="footer">
+
+                <div class="box-container">
+            
+                    <div class="box">
+                        <h3>about us</h3>
+                        <p>Established in 2022, Voyage has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers.Our website provide You the best experiance,so that you can have the best vactions of your life</p>
+                    </div>
+                    <div class="box">
+                        <h3>branch locations</h3>
+                        <a href="https://en.wikipedia.org/wiki/India">india</a>
+                        <a href="https://en.wikipedia.org/wiki/USA">USA</a>
+                        <a href="https://en.wikipedia.org/wiki/Japan">japan</a>
+                        <a href="https://en.wikipedia.org/wiki/France">france</a>
+                    </div>
+                    <div class="box">
+                        <h3>quick links</h3>
+                        <a href="{{url_for('index')}}">home</a>
+                        <a href="{{url_for('booking2')}}">book</a>
+                        <a href="#packages">packages</a>
+                        <a href="#services1">services</a>
+                        <a href="#gallery">gallery</a>
+                        <a href="#footer">contact</a>
+                    </div>
+                    <div class="box1">
+                        <h3>follow us</h3>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                    </div>
+            
+                </div>
+            
+                <h1 class="credit"> created by <span> Voyage </span> | all rights reserved! </h1>
+            
+            </section>
+<!-- packages section ends -->
+
+    <script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+</body>
+</html>
